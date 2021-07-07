@@ -11,12 +11,11 @@ import AppCenter
 import AppCenterCrashes
 import AppCenterAnalytics
 
-
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        
+                
         AppCenter.start(withAppSecret: "57eb2736-5c3b-4c3b-bd10-45be6bc6f407", services: [Analytics.self, Crashes.self])
         
         return true
