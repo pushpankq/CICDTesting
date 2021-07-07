@@ -22,6 +22,8 @@ class DashboardViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        print("Hello")
+        
         Crashes.generateTestCrash()
         activityIndicatorView.startAnimating()
         tableView.alpha = 0.0
