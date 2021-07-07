@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import AppCenterCrashes
 
 class DashboardViewController: UIViewController {
     
@@ -20,6 +21,8 @@ class DashboardViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        Crashes.generateTestCrash()
         activityIndicatorView.startAnimating()
         tableView.alpha = 0.0
         loadData()
